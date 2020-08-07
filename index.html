@@ -26,32 +26,51 @@
     <h1 id="title">User Story</h1>
 
     <p id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi officiis consequuntur ad! Cum assumenda sapiente nisi praesentium odio nesciunt excepturi animi labore ab omnis, consequatur unde doloribus ex! Maiores, officiis!</p>
-    
+
     <form action="" id="survey-form">
       <label for="name" id="name-label">Name:</label>
-      <input type="text" id="name" placeholder="put your name">
+      <input type="text" id="name" placeholder="put your name" required>
+      <br>
       <label for="email" id="email-label">E-mail:</label>
-      <input type="email" id="email" placeholder="put your e-mail hear">
+      <input type="email" id="email" placeholder="put your e-mail hear" required>
+      <br>
       <label for="number" id="number-label" placeholder="Put a number">Number:</label>
-      <input type="number" id="number">
+      <input type="number" id="number" min="0" max="9999999999" placeholder="+1 555-617-9989">
+      <br>
       <label for="dropdown" id="dropdown-label"></label>
       <select name="" id="dropdown">
         <option>1</option>
         <option>2</option>
         <option>3</option>
       </select>
+      <label for="radio" id="radio">Would you recommend us ?</label>
+      <br>
+       <input type="radio" id="yes-radio" name="radio" value="yes" class="checkbox">
+       <label for="yes-radio" class="checkbox">Yes</label>
+      <br>
+       <input type="radio" id="no-radio" name="radio" value="no" class="checkbox">
+       <label for="no-radio" class="checkbox">No</label>
+      <br>
+      <input type="radio" id="maybe-radio" name="radio" value="maybe" class="checkbox">
+        <label for="maybe-radio" class="checkbox">Maybe</label>
+        <br>
+        <label for="checkbox" id="checkbox">What are you contacting us for ?</label>
+         <br>
+         <input type="checkbox" id="first" name="chck" value="first" class="checkbox">
+         <label for="first" class="checkbox">First reason</label>
+          <br>
+         <input type="checkbox" id="no-radio" name="chck" value="second" class="checkbox">
+         <label for="second" class="checkbox">Second reason</label>
+          <br>
+        <input type="checkbox" id="maybe-radio" name="chck" value="third" class="checkbox">
+          <label for="third" class="checkbox">Third reason</label>
+          <br>
+      <label for="comments">Your message</label><br>
+      <textarea id="text" name="comments" cols="120" rows="15"></textarea>
+      <br>
+      <input id="submit" type="submit" value="Submit">
     </form>
 
-
-User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
-
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-
-User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
-
-User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
 
 
   </body>
